@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase09</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--Enlazar JS a nuestro proyecto-->
+</head>
+<body>
+    <button id="aceptar">Aceptar</button>
+    <button id="cancelar">Candelar</button>
+    
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+    </ul>
+    
+    <p class="p">Hola mundo</p>
+    <p>como estas</p>
+    <p>nos vemos hoy</p>
+    <p class="p">o mañana</p>
+    <p>adios</p>
+    <script>
+        //acceso al boton
+        const btnAceptar = document.getElementById("aceptar"); //devuelve un solo elemento// getElementById → es un metodo que lleva como parametros una cadena de caracteres que tiene que hacer referencia a in ID y lo que me va a devolver es el nodo completo al que hace referencia el ID
+        console.log(btnAceptar);
+        //cambiat los atributos del boton
+        //Ejemplo cambiar el nodo texto
+        btnAceptar.innerText = "Agree"
+        btnAceptar.textContent = "Si"
+
+        const lis = document.getElementsByTagName("li"); //me devuelve una coleccion de elementos
+        console.log(lis);
+        lis[3].textContent = "Esto fue modificado" //es importante definir que es lo que quiero modificar, no podemos afetar a todos los textos juntos (lis.textContent) → no va afuncionar
+
+        const parrafos = document.getElementsByClassName("p"); //devuelve coleccion de elementos//es un selector multiple que devolvera solo los elementos que tengan la clase solicitada en este caso la clase "p"
+        console.log(parrafos); 
+
+        //ejemplo queremos cambiar el color de todos los parrafos
+        for(let i = 0; i < parrafos.length; i+=1){ //forma correcta de acceder a cada uno y cmabiarle el color solo de los que tiene esa clase
+            parrafos[i].style.color = "yellow"
+        }
+        //parrafos.style.color = "yellow" // esto no va a funcionar porque debemos acceder a uno por uno
+    </script>
+
+</body>
+</html>

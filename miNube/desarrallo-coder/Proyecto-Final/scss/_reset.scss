@@ -1,0 +1,11 @@
+/*Reset css: estilos reseteados para trabajar desde 0 partimos del llamado "*" = a todo el documuento html*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    background-color: #fefefe;
+}

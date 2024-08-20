@@ -1,0 +1,87 @@
+$header-bg-color: var(--#{$prefix}-header-bg-color, $color-slate-50);
+$header-border-color: var(--#{$prefix}-header-border-color, $color-slate-200);
+
+$footer-bg-color: var(--#{$prefix}-footer-bg-color, $color-slate-100);
+$footer-text-color: var(--#{$prefix}-footer-text-color, $body-text-color);
+
+$hero-text-color: var(--#{$prefix}-hero-text-color, $color-slate-100);
+$hero-gradient-start: var(--#{$prefix}-hero-gradient-start, $color-slate-700);
+$hero-gradient-end: var(--#{$prefix}-hero-gradient-end, $color-slate-900);
+
+
+
+
+
+.base{
+    /**/
+    &-layout{
+        display: flex;
+        flex-direction: column;
+    }
+    /**/
+     
+    &-header {
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9000;
+        position: fixed; /*significa que el header siempre se encontrara arriba*/
+        box-shadow: 0 0 1em -0.125em rgb(10 10 10 / 10%),
+                    0 0 1px rgb(10 10 10 / 2%);
+
+        border-bottom: 1px solid $header-border-color;
+        background-color: $header-bg-color;
+    }
+    &-content {
+        flex: 1; /*Su padre ya es display-flex por lo tanto el es display 1*/
+        position: relative; /**/
+        margin-top: 64px;
+    }
+    &-footer {
+        padding: 32px 16px;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        background-color: $footer-bg-color;
+        p {
+            color: $footer-text-color;
+        }
+
+    }
+}
+.hero-section { /*estilos para el titulo*/
+    padding: 96px 16px;
+    background-image: linear-gradient(to right, $hero-gradient-start, $hero-gradient-end);
+    .hero-title {
+        color: $hero-text-color;
+        margin: 0 auto;
+        max-width: 540px;
+        text-align: center;
+        line-height: $leading-tight;
+        font-weight: $font-bold;
+        font-family: $font-primary;
+    }
+}
+.base-section{
+    padding: 64px 0 32px;
+}
+
+.preview-layout { /*esots estlios se repiten en la mayoria de los contenedores*/
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .btn {
+        width: 100%;
+        display: block;
+    }
+    @include md {
+        flex-direction: row;
+        .btn {
+            width: auto;
+            display: inline-block;
+        }
+    }
+}

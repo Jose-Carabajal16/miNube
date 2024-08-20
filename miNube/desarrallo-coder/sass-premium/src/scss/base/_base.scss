@@ -1,0 +1,37 @@
+//tipo de tema que vamos a estar usando en este caso es un tema claro
+html {
+    color-scheme: ligth;
+    scroll-behavior: smooth;
+}
+
+//tanto al body como al html se le va a aplicar estilos para que solo tenga scroll de manera vertical
+html,body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+
+    //estilos para que las fuentes se rendericen de manera adecuada
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -webkit-top-hightlight-color: transparent;
+
+    //color de las fuentes
+    color: $body-text-color;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    font-weight: $font-weight-base;
+    background-color: $body-bg-color;
+    font-family: $font-primary;
+}
+
+//estilos por defectos agregados directamente a las imagenes 
+img{
+   display: block;
+   max-width: 100%;
+}

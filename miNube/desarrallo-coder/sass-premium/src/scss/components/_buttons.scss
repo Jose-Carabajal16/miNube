@@ -1,0 +1,87 @@
+/*VARIABLES DE LOS BOTONES → Nos coneviene guardar algunos estilos de los botones en variables*/
+$btn-radius: var(--#{$prefix}-btn-radius, 8px);
+
+.btn {
+    /* se van a crear variables internas para no crear variables para cada clase de botón */
+    --#{$prefix}-btn-bg: #{$color-slate-300};
+
+    --#{$prefix}-btn-color: #{$color-slate-600};
+    --#{$prefix}-btn-border-color: transparent;
+    --#{$prefix}-btn-hover-bg: #{$color-slate-200};
+    --#{$prefix}-btn-hover-color: #{$color-slate-600};
+
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 12px 32px;
+    display: inline-flex;
+    outline: 0;
+    font-size: $font-md;
+    text-align: center;
+    transition: all .2s ease;
+    font-weight: $font-medium;
+    line-height: 1;
+    user-select: none;
+    text-transform: none;
+    text-decoration: none;
+
+    color: var(--#{$prefix}-btn-color);
+    border-color: var(--#{$prefix}-btn-border-color);
+    border-radius: $btn-radius;
+    background-color: var(--#{$prefix}-btn-bg);
+
+    /*STATE → ESTADOS DE LOS BOTONES*/
+    &:hover {
+        color: var(--#{$prefix}-btn-hover-color);
+        background-color: var(--#{$prefix}-btn-hover-bg);
+    }
+
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 2px $color-focus;
+    }
+
+    &:active {
+        transform: scale3d(.95, .95, 1);
+    }
+
+    &:disabled {
+        opacity: .5;
+        pointer-events: none;
+    }
+
+    /*TIPOS DE BOTONES*/
+    &.btn-outline {
+        --#{$prefix}-btn-bg: transparent;
+        --#{$prefix}-btn-color: #{$body-text-color};
+        --#{$prefix}-btn-border-color: #{$color-slate-300};
+        --#{$prefix}-btn-hover-bg: #{$color-slate-300};
+    }
+
+    &.btn-plain {
+        --#{$prefix}-btn-bg: transparent;
+        --#{$prefix}-btn-color: #{$body-text-color};
+        --#{$prefix}-btn-hover-bg: #{$color-slate-300};
+    }
+
+    /*COLORES*/
+    @include btnColorVariation ('primary', $color-primary, $color-primary-hover, $color-primary-contrast);
+    @include btnColorVariation ('secondary', $color-secondary, $color-secondary-hover, $color-secondary-contrast);
+
+
+
+    /*TAMAÑOS DE BOTONES*/
+    &.btn-sm {
+        padding: 8px 24px;
+        font-size: $font-sm;
+    }
+
+    &.btn-lg {
+        padding: 16px 48px;
+        font-size: $font-lg;
+    }
+
+    &.btn-block {
+        width: 100%;
+        display: block;
+    }
+}

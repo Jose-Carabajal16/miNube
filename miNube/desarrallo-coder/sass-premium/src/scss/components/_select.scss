@@ -1,0 +1,36 @@
+$select-bg-color: var(--#{$prefix}-select-bg-color, $color-slate-50);
+$select-hover-color: var(--#{$prefix}-select-hover-color, white);
+$select-text-color: var(--#{$prefix}-select-text-color, $body-text-color);
+$select-border-color: var(--#{$prefix}-select-border-color, $color-slate-400);
+$select-focus-color: var(--#{$prefix}-select-focus-color, $color-slate-500);
+
+.select{
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: $font-md;
+    appearance: none;
+    transition: all .2s ease;
+    line-height: $leading-normal;
+    user-select: none;
+    border-radius: 8px;
+    padding-right: 32px;
+
+    /*flecha hacia abajo*/
+    background-size: 24px auto;
+    background-image: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(100, 116, 139)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'></polyline></svg>");
+    background-position: calc(100% - 4px) center;
+
+    color: $select-text-color;
+    border-color: $select-border-color;
+    background-color: $select-bg-color;
+
+    &:hover{
+        background-color: $select-hover-color;
+    }
+    &:focus {
+        outline: 0;
+        box-shadow: 0 0 0 1px $select-focus-color;
+        border-color: $select-focus-color;
+    }
+}

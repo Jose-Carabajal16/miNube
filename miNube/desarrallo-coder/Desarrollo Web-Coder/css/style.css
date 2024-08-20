@@ -1,0 +1,285 @@
+/*Reset css: estilos reseteados para trabajar desde 0 partimos del llamado "*" = a todo el documuento html*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+footer {
+    margin-top: auto;
+}
+
+/*HEADER-BOOSTRAP*/
+
+.bg-body-tertiary{
+    background-color: #D1C7BD !important; 
+}
+.btn-outline-success {
+    --bs-btn-color: #5E4A41;
+    --bs-btn-border-color: #5E4A41;
+} 
+
+
+.buscador {
+    padding: 2px;
+    margin: 10px;
+    display: inline-block;
+
+}
+
+.buscador input {
+    padding: 8px;
+    border-radius: 1px solid #5E4A41;
+    ;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+.buscador button {
+    background-color: #5E4A41;
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    border-radius: 5px;
+
+}
+
+
+
+.iconos {
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: #5E4A41;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.iconos i {
+    color: #fff;
+    padding: 3px;
+
+}
+
+
+/*MAIN-BOOSTRAP*/
+.btn-primary{
+    background-color: #5E4A41 !important;
+    border-color: #5E4A41 !important;
+}
+#mainInicio {
+    background-color: #ebebeb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.card{
+    margin: 30px;
+}
+.detalle{
+    display: flex;
+    justify-content: center;
+}
+.detalle h1{
+    font-size: 25px;
+    color: #5E4A41;
+    padding: 10px 0;
+}
+.infoAdicionalBox{
+    background-color: #5E4A41;
+    color: #fff;
+    height: 100%;
+}
+.masInfo {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px; 
+}
+
+
+/*footer-boostrp*/
+
+#footer {
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    background-color: #D1C7BD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imgLogo{
+    width:193px; 
+    height:83px;
+}
+.redes {
+    padding: 10px;
+}
+
+.redes i {
+    font-size: 25px;
+    color: #5E4A41;
+}
+
+.redes a {
+    margin: 20px;
+}
+
+.links {
+    text-align: center;
+    justify-content: center;
+}
+
+.links ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+}
+
+.links li {
+    margin-right: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+/*boostrap-detalle del producto*/
+#carruselDetail {
+    text-align: center;
+    background-color: #5E4A41;
+    padding: 20px;
+}
+
+#carruselDetail p {
+    color: #D1C7BD;
+    font-size: 18px;
+}
+
+
+.carousel-inner {
+    max-width: 100%;
+}
+
+.carousel-item {
+    text-align: center;
+}
+.images img{
+    margin: 20px;
+}
+
+.price{
+    margin-left: 20px;
+    font-weight: bold;
+}
+.cuotas{
+    margin-left: 20px;
+    font-weight: bold;
+    color: #5E4A41;
+}
+.cantidad{
+    margin-left: 20px;
+    font-weight: bold;
+}
+.titulo{
+    margin-left: 20px;
+}
+.boton {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.suma,
+.resta {
+    color: white;
+    background-color: #5E4A41;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+.descripcion p{
+    margin: 20px;
+
+}
+.detail h1{
+    color: #000;
+}
+h3{
+    margin: 20px;
+}
+
+/*quienes somos-boostrap*/
+.img-fluid{
+    width: 90%;
+    height: 750px;
+}
+.tituloQuieneSomos{
+    margin: 20px;
+    font-family: 'Italianno', cursive;
+    font-size: 50px;
+    color: #5E4A41;
+}
+.parrafo-contenido{
+    margin: 20px;
+}
+
+/*lOGIN-BOOSTRAP*/
+.login-container{
+    background-image: url("../images/fondo.jpg");
+    height: 100vh !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.formulario{
+    background-color: #D1C7BD;
+    width: 30% !important;
+    position: absolute !important;
+    top: 120px !important;
+    border-radius: 10px !important;
+    left: 35%;
+}
+.h3-login{
+    color: #5E4A41;
+    margin: 10px;
+}
+
+.form-label{
+    font-weight: 400;
+}
+
+@media only screen and (max-width:600px){
+    .formulario{
+        width: 100% !important;
+        left: 0 !important;
+    }
+}

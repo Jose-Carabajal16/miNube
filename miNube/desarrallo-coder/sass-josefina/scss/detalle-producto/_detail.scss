@@ -1,0 +1,81 @@
+/*boostrap-detalle del producto*/
+
+#carruselDetail {
+    text-align: center;
+    background-color: #5E4A41;
+    padding: 20px;
+
+    p {
+        color: #D1C7BD;
+        font-size: 18px;
+    }
+}
+
+.carousel-inner {
+    max-width: 100%;
+    .carousel-item {
+        text-align: center;
+    }
+}
+
+
+.images img {
+    margin: 20px;
+}
+
+.price {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.cuotas {
+    margin-left: 20px;
+    font-weight: bold;
+    color: #5E4A41;
+}
+
+.cantidad {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.titulo {
+    margin-left: 20px;
+}
+
+.boton {
+    display: flex;
+    margin: 20px;
+    background-color: #5E4A41;
+    width: 200px;
+    border-radius: 10px;
+    justify-content: center;
+  
+    button a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+.suma,
+.resta {
+    color: white;
+    background-color: #5E4A41;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.descripcion p {
+    margin: 20px;
+}
+
+.detail h1 {
+    color: #000;
+}
+
+h3 {
+    margin: 20px;
+}

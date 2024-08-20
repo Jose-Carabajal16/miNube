@@ -1,0 +1,15 @@
+
+$primary: #5E4A41;
+$secondary: #D1C7BD;
+// Sobrescribe las variables de Bootstrap antes de importar Bootstrap
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  // Otros colores según sea necesario
+);
+.bg-navbar {
+    background-color: $secondary
+}
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+

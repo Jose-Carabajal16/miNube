@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos y Propiedades</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .principal{
+            background-color: aqua;
+        }
+        .texto{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Hola Mundo</h1>
+
+    <div id="resultado"></div>
+
+
+    <script>
+        //let titulo = document.querySelector('#titulo');
+        //console.log(titulo.innerText); // accede al texto que tiene el elemento seleccionado
+        //let resultado = document.querySelector('#resultado');
+        //resultado.innerText = titulo.innerText //metemos adentro del div el resultado del titulo
+
+
+        //titulo.innerText = "Hola coders" //afectamos el nodo texto
+
+        let res = document.querySelector('#resultado'); //se agrego nodos HTML al div
+        //res.innerHTML = "<h2>Hola josefina</h2><p>Hola coders</p>"//me da la posibilidad de agregar nodos HTML
+
+/*
+        //agregar clases
+        res.className = "principal";
+        res.className = "";
+        res.classList.add("principal");//forma mas eficiente
+        res.classList.add("texto");
+        res.classList.remove("texto") //quitar clases
+*/
+
+// CREAR ELEMENTOS
+
+        let parrafo = document.createElement("p");
+        //parrafo.textContent = "Hola Josefina Abril"; //hasta aqui si lo buscamos en la nav no va a aparecer porque lo unico que hicimos fue crearlo y no decirle a donde tiene que estar
+        //podemos agregar contenido HTML
+        parrafo.innerHTML = "<h2>Hola texto</h2>"
+        parrafo.classList.add("texto");
+        res.appendChild(parrafo);
+
+
+
+
+
+        
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+[
+    {
+        "img":"/images/mesadetrabajo2.jpg",
+        "titulo": "Aros Colgantes Rufina",
+        "descripcion":"Aros de oro alargados envuelto en perlas. Elegancia real para resaltar tu belleza.",
+        "precio":3000,
+        "cantidad": 10,
+        "categoria": "aros",
+        "id": 1 
+    },
+    {
+        "img":"/images/mesadetrabajo3.jpg",
+        "titulo": "Argollas Kika",
+        "descripcion":"Argollas simples, elegantes, de plata fina. Un toque de distinción para tu estilo diario.",
+        "precio":3000,
+        "cantidad": 10,
+        "categoria": "aros",
+        "id": 2 
+    },
+    {
+        "img":"/images/mesadetrabajo4.jpg",
+        "titulo": "Aros Colgantes Luna",
+        "descripcion":"Oro brillante abraza perlas grandes. Aros que deslumbran con encanto atemporal",
+        "precio":3000,
+        "cantidad": 10,
+        "categoria": "aros",
+        "id": 3 
+    },
+    {
+        "img":"/images/mesadetrabajo5.jpg",
+        "titulo": "Pulceras Isabella",
+        "descripcion":"Dos pulseras, infinitas posibilidades. Dijes delicados en oro para un toque de armonía.",
+        "precio":3000,
+        "cantidad": 10,
+        "categoria": "pulceras",
+        "id": 4 
+    }
+]

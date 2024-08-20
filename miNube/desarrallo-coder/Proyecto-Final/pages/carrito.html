@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--META-TAGS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Joyas Afrodita</title>
+    <meta name="title" content="Carrito de Compras">
+    <meta name="description"
+        content="Revisa y administra los artículos en tu carrito de compras en Afrodita. Añade o actualiza joyas antes de finalizar tu compra.">
+    <meta name="keywords" content="carrito de compras, joyas, Agregar al carrito, compra en línea">
+    <meta name="author" content="Josefina Carabajal">
+    <meta property="og:url" content="https://github.com/Jose-Carabajal16/PreEntrega3-Carabajal.git">
+    <meta property="og:type" content="website">
+    <meta http-equiv="content-language" content="es">
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Estilos css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" width="193px" height="83px"
+                        alt="afrodita"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html">Ingresar</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Colecciones
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Anillos</a></li>
+                                <li><a class="dropdown-item" href="#">Collares</a></li>
+                                <li><a class="dropdown-item" href="#">Aros</a></li>
+                                <li><a class="dropdown-item" href="#">Brazaletes</a></li>
+                                <li><a class="dropdown-item" href="#">Sale</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="./quienesomos.html">¿Quienes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./carrito.html">Carrito de Compras</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main id="mainCarrito">
+        <div class="wrapper">
+            <h1>Carrito de compras</h1>
+            <div class="project">
+                <div class="shop">
+                    <div class="box">
+                        <img src="../images/mesadetrabajo10.jpg" alt="img-1">
+                        <div class="content">
+                            <h3 class="title-carrito">Aros Colgantes Rufina</h3>
+                            <h4 class="price-carrito">Precio: $5.000</h4>
+                            <p class="unidad">Cantidad: <input value="1"></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="../images/mesadetrabajo4.jpg" alt="img-2">
+                        <div class="content">
+                            <h3 class="title-carrito">Aros Colgantes Luna</h3>
+                            <h4 class="price-carrito">Precio: $7.000</h4>
+                            <p class="unidad">Cantidad: <input value="1"></p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="../images/mesadetrabajo5.jpg" alt="img-3">
+                        <div class="content">
+                            <h3 class="title-carrito">Pulceras Isabella</h3>
+                            <h4 class="price-carrito">Precio: $8.000</h4>
+                            <p class="unidad">Cantidad: <input value="1"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rigth-bar">
+                    <p><span>Subtotal</span> <span> $20.000</span></p>
+                    <hr>
+                    <p><span>Descuento</span> <span>10%</span></p>
+                    <hr>
+                    <p><span>TOTAL</span> <span>$18.000</span></p>
+                    <a href="#"><i class="fa fa-shopping-cart"></i> Comprar</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+    <footer class="container-fluid bg-light py-3">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-12">
+                <div class="logo text-center text-lg-start">
+                    <a href="../index.html"><img class="imgLogo" src="../images/logo.png" alt="afrodita"></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="links text-center d-flex justify-content-center justify-content-md-start">
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./quienesomos.html">Sobre Nosotros</a></li>
+                        <li><a href="./login.html">Ingresar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="redes text-center">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

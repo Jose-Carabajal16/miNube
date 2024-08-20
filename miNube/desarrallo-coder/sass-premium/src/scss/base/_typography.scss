@@ -1,0 +1,56 @@
+//ESTILOS DIRECTOS EN TODOS LOS ELEMENTOS DE TEXTOS
+
+h1, h2, h3, h4, h5, h6{
+    color: $heading-text-color;
+    font-weight: $font-medium;
+    line-height: $leading-tight;
+    font-family: $font-secundary;
+
+    //cuando nuestro titulo sea el primer hijo no tendra margen para arriba 
+    &:first-child{
+        margin-top: 0;
+    }
+    //cuando nuestro titulo sea el ultimo hijo no tendra margen para arriba
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+h1{
+    margin: 32px 0;
+    font-size: 48px;
+}
+h2{
+    margin: 32px 0;
+    font-size: 36px;
+}
+h3{
+    margin: 24px 0;
+    font-size: 30px;
+}
+h4{
+    margin: 20px 0;
+    font-size: 24px;
+}
+h5{
+    margin: 18px 0;
+    font-size: 20px;
+}
+h6{
+    margin: 16px 0;
+    font-size: 18px;
+}
+
+p{
+    color: #64748b;
+    margin: 16px 0;
+    font-weight: 1.5;
+//primer parrafo no tendra margen arriba 
+    &:first-child{
+        margin-top: 0;
+    }
+//ultimo parrafo no tendra margen abajo 
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+}

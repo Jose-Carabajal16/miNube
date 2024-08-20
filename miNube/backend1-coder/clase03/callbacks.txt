@@ -1,0 +1,64 @@
+Un **callback** en JavaScript es una función que se pasa como argumento a otra función y se ejecuta después de que se haya completado alguna operación. Los callbacks son una forma de asegurarse de que cierto código se ejecute solo después de que otro código haya terminado, lo que es especialmente útil en operaciones asíncronas como la lectura de archivos, solicitudes HTTP, o temporizadores.
+
+### Ejemplo básico de un callback:
+
+Supongamos que tienes una función que recibe dos números y otra función como callback. Esta función suma los dos números y luego ejecuta el callback pasándole el resultado de la suma.
+
+```javascript
+function suma(a, b, callback) {
+    let resultado = a + b;
+    callback(resultado);
+}
+
+// Función callback que se pasará como argumento
+function mostrarResultado(resultado) {
+    console.log("El resultado es:", resultado);
+}
+
+// Llamamos a la función suma y le pasamos la función mostrarResultado como callback
+suma(5, 7, mostrarResultado);
+```
+
+### Explicación:
+
+1. **suma(a, b, callback):** Esta es la función principal que toma dos números (`a` y `b`) y una función (`callback`) como argumentos.
+   - Suma `a` y `b` para obtener `resultado`.
+   - Luego, llama al `callback` pasando `resultado` como argumento.
+
+2. **mostrarResultado(resultado):** Esta es la función callback. Recibe el `resultado` de la suma y lo imprime en la consola.
+
+3. **Llamada a suma(5, 7, mostrarResultado):** Aquí se llama a la función `suma`, y se pasa `mostrarResultado` como el callback. Después de que la suma se completa, `mostrarResultado` se ejecuta e imprime "El resultado es: 12".
+
+### Ejemplo con operaciones asíncronas:
+
+Uno de los usos más comunes de los callbacks es en funciones asíncronas. Por ejemplo, cuando usas `setTimeout` para ejecutar una función después de un retraso:
+
+```javascript
+console.log("Inicia");
+
+setTimeout(() => {
+    console.log("Esto se ejecuta después de 2 segundos");
+}, 2000);
+
+console.log("Termina");
+```
+
+### Explicación:
+
+1. **setTimeout(callback, 2000):** `setTimeout` es una función que toma dos argumentos: un callback y un tiempo en milisegundos. Después de que pase el tiempo especificado (2000 ms en este caso), el callback se ejecuta.
+   
+2. **Callback anónimo:** En este ejemplo, el callback es una función anónima que imprime "Esto se ejecuta después de 2 segundos".
+
+3. **Flujo de ejecución:** El flujo de ejecución es asíncrono:
+   - Primero, se imprime "Inicia".
+   - Luego, `setTimeout` inicia el temporizador.
+   - Mientras el temporizador está corriendo, el programa sigue ejecutando las siguientes líneas, por lo que "Termina" se imprime inmediatamente.
+   - Después de 2 segundos, la función callback dentro de `setTimeout` se ejecuta y se imprime "Esto se ejecuta después de 2 segundos".
+
+### Importancia de los callbacks:
+
+Los callbacks son fundamentales en JavaScript, especialmente en la programación asíncrona, porque permiten manejar tareas que no se pueden completar de inmediato, como solicitudes a servidores o temporizadores. Los callbacks aseguran que el código no se bloquee esperando que estas tareas se completen y permiten que otras partes del programa continúen ejecutándose.
+
+### Conclusión:
+
+Un callback es simplemente una función que se pasa como argumento a otra función para que se ejecute después de que la primera función haya completado su tarea. Esta técnica es clave para manejar operaciones asíncronas de manera eficiente.

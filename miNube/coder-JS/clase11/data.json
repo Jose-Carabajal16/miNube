@@ -1,0 +1,26 @@
+[
+    {
+        "marca": "Samsung",
+        "modelo": "Heladera",
+        "color": "Gris",
+        "precio": 1500
+    },
+    {
+        "marca": "LG",
+        "modelo": "Lavadora",
+        "color": "Blanco",
+        "precio": 800
+    },
+    {
+        "marca": "LG",
+        "modelo": "Televisor",
+        "color": "Negro",
+        "precio": 2000
+    },
+    {
+        "marca": "Sony",
+        "modelo": "Televisor",
+        "color": "Gris",
+        "precio": 1000
+    }
+]

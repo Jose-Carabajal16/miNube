@@ -1,0 +1,88 @@
+Este código utiliza **promesas** para manejar operaciones asincrónicas, específicamente para sumar y multiplicar números. Vamos a desglosar y explicar cada parte:
+
+### Promesas en JavaScript:
+
+Una **promesa** es un objeto que representa un valor que puede estar disponible ahora, en el futuro, o nunca. Las promesas permiten manejar operaciones asincrónicas de manera más limpia y estructurada que utilizando callbacks.
+
+Una promesa tiene tres estados:
+
+1. **Pending (Pendiente)**: La promesa está en proceso y aún no se ha resuelto o rechazado.
+2. **Fulfilled (Cumplida)**: La operación se completó con éxito.
+3. **Rejected (Rechazada)**: La operación falló.
+
+Las promesas tienen dos funciones principales:
+
+- **`resolve`** (`res` en tu código): Se llama cuando la operación se completa con éxito.
+- **`reject`** (`rej` en tu código): Se llama cuando la operación falla.
+
+### Explicación del código:
+
+#### 1. Función `suma`:
+
+```javascript
+const suma = (a, b) => {
+    return new Promise((res, rej) => {
+        if (typeof a !== 'number' || typeof b !== 'number') {
+            rej("Error: solo se aceptan argumentos numéricos");
+        }
+        res(a + b);
+    });
+}
+```
+
+- **Retorno de una promesa**: La función `suma` devuelve una promesa.
+- **Validación de tipos**: Dentro de la promesa, se valida si ambos argumentos `a` y `b` son números usando `typeof`. Si no lo son, se llama a `rej` con un mensaje de error.
+- **Resolución de la promesa**: Si ambos argumentos son números, la promesa se resuelve (`res`) con la suma de `a` y `b`.
+
+#### 2. Función `multiplicar`:
+
+```javascript
+const multiplicar = (a, b) => {
+    return new Promise((res, rej) => {
+        if (typeof a !== 'number' || typeof b !== 'number') {
+            rej("Error: solo se aceptan argumentos numéricos");
+        }
+        res(a * b);
+    });
+}
+```
+
+- **Similar a `suma`**: Esta función también devuelve una promesa que realiza una operación de multiplicación. Si los argumentos no son números, la promesa es rechazada. Si lo son, se resuelve con el producto de `a` y `b`.
+
+#### 3. Encadenamiento de Promesas:
+
+```javascript
+suma(5, 5)
+    .then(res1 => {
+        return suma(res1, 5);
+    })
+    .then(res2 => suma(res2, "5"))
+    .then(res3 => suma(res3, 5))
+    .then(res4 => suma(res4, 5))
+    .then(resFinal => console.log("Encadenamiento de promesas:", resFinal))
+    .catch(error => error.message ? console.log(error.message) : console.log(error));
+```
+
+- **`suma(5, 5)`**: La primera promesa se ejecuta sumando 5 + 5. Como ambos son números, la promesa se resuelve y pasa el valor 10 al siguiente `.then`.
+  
+- **Encadenamiento de `.then`**:
+    - **Primer `.then`**: Toma el resultado (10) y lo pasa como `res1` a la siguiente llamada a `suma`, sumando 10 + 5. El resultado es 15.
+    - **Segundo `.then`**: Aquí intenta sumar 15 + "5". Como `"5"` es una cadena de texto y no un número, la promesa será rechazada, y se ejecutará el `.catch`.
+  
+- **`.catch`**:
+    - Si alguna de las promesas es rechazada (lo que ocurre en el segundo `.then`), se ejecuta este bloque.
+    - Se verifica si el error tiene un mensaje (`error.message`). Si es así, lo imprime. Si no, imprime el error tal cual.
+
+### Ejemplo completo:
+
+- **Primera ejecución**:
+  - `suma(5, 5)` → 10 (éxito).
+  - `suma(10, 5)` → 15 (éxito).
+  - `suma(15, "5")` → Falla (rechazo), porque `"5"` es una cadena y no un número.
+  - **El flujo salta al `.catch`** y el error se imprime.
+
+- **Resultado**: El programa imprime el mensaje de error `"Error: solo se aceptan argumentos numéricos"`.
+
+### Resumen:
+
+Este código utiliza promesas para realizar operaciones matemáticas y encadenarlas secuencialmente. Si alguna de las operaciones falla, el flujo de las promesas se detiene y el error se maneja en el bloque `.catch`, proporcionando un mecanismo robusto para manejar errores en operaciones asincrónicas.

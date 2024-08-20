@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS03</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        #res {
+            background-color: brown;
+            color: aliceblue;
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>EVENTOS DENTRO DEL HTML</h1>
+
+    <button id="btn">CLICK</button>
+
+    <div id="res"></div>
+
+    <nav class="navegacion">
+        <a href="#">vender</a>
+        <a href="#">ayuda</a>
+        <a href="#">registro</a>
+        <a href="#">Iniciar sesion</a>
+
+    </nav>
+
+
+    <script>
+        const nav = document.querySelector(".navegacion");
+        nav.addEventListener("mouseenter", function () {
+            console.log("Entrando a la navegacion");
+            nav.style.backgroundColor = "yellow";
+        })
+        nav.addEventListener("mouseout", function () {
+            console.log("Saliendo de la navegacion");
+            nav.style.backgroundColor = "blue";
+        });
+
+        //otros eventos
+        /*
+        mousedown → cuando se presiona
+        click → cuando se hace click
+        dbclick → reacciona al doble click
+        mouseup → reacciona al soltar el boton del mouse
+        */
+    </script>
+
+</body>
+
+</html>

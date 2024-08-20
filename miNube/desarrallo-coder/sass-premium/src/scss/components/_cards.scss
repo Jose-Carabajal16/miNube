@@ -1,0 +1,60 @@
+
+$card-bg: var(--#{prefix}-card-bg, white);
+$card-radius: var(--#{prefix}-card-radius, 12px);
+$card-border: var(--#{prefix}-card-border, $color-slate-200);
+
+.card{
+    border: 1px solid $card-border;
+    overflow: hidden;
+    position: relative;
+    transition: all .3s ease;
+    box-shadow: $shadow-xl;
+    border-radius: $card-radius;
+    background-color: $card-bg;
+
+    &:hover {
+        box-shadow: $shadow-md;
+    }
+    &-content {
+        padding: 24px 18px;
+    }
+    &-title {
+        font-size: $font-2xl;
+        font-weight: $font-bold;
+    }
+    &-image{
+        width: 100%;
+        height: auto;
+    }
+    &-text {
+        margin-bottom: 24px;
+    }
+    &-action{
+        gap: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+.card-container {
+    gap:16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /*estos parametros nos indican que las tarjetas se van a ajustar al contenedor*/
+    .card {
+        flex: 0 0 auto;
+        width: 100%;
+/*En los dispositivos pequeños se mostraran dos tarjetas por eso lo dividimos en 50%*/
+        @include sm {
+            width: calc(50% - 8px);
+/*En los dispositivos grandes se mostraran cuatro tarjetas por eso lo dividimos en 25%*/
+
+        }
+        @include xl {
+            width: calc(25% - 12px);
+        }
+    }
+}

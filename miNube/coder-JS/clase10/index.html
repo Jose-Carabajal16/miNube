@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase10</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--Enlazar JS a nuestro proyecto-->
+</head>
+<body>
+    <h1>EVENTOS</h1>
+    <button>CLICK</button>
+
+
+    <script>
+        //CLICK EN EL DOCUMENTO
+/*      document.addEventListener("click", function(){
+            alert("Click en el documento");
+        }) //el primer parametro es una cadena de caracteres y sera el evento que yo quiero escuchar y el segundo es una funcion
+*/
+        //CLICK EN UN ELEMENTO
+
+        let btn = document.querySelector("button"); //FORMULA 1) Seleccionar ele elemento
+        console.log(btn);
+/*
+        btn.addEventListener("click", function(){ //click es el elemeto a escuchar no es el nombre del boton 
+            alert("Click en el boton");
+        })
+*/ 
+        
+        btn.addEventListener("click",reaccionarAlClick); //2) Escuchar el evento
+        function reaccionarAlClick(){ //3) Reaccionar al evento (lo mejor es definirla antes de llamarla)
+        alert("Click en el boton")
+    }
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+Enlazar la libreria principal (afream)
+
+Agregar plugins especificos para esta libreria
+
+Generar una interface (html)
+
+Completar la interface (JS)
+
+Crear una funcionalidad (JS)

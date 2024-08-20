@@ -1,0 +1,18 @@
+
+.navbar {
+    gap: 16px; //para que los elementos que esten dentro tengan un espaciado
+    height: 64px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-brand { //logo
+        height: 32px;
+
+    }
+    &-items {
+        gap: 16px;
+        display: flex;
+    }
+}

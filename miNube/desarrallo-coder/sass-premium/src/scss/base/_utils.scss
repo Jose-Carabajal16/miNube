@@ -1,0 +1,25 @@
+//vamos a ordenar todas las clases utilitarias 
+.container{
+    width: 100%;
+    display: block;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.flex-container{
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    
+    /*se crea una version que empuje los elementos hacia abajo si el tamaño crece*/
+
+    &.wrap {
+        flex-wrap: wrap;
+    }
+}
+
+@include generate-spacing(margin, m);
+@include generate-spacing(padding, p);

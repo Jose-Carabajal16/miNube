@@ -1,0 +1,59 @@
+/*HEADER-BOOSTRAP*/
+
+.navbar {
+    background-color: #D1C7BD !important;
+}
+
+
+.btn-outline-success {
+    --bs-btn-color: #5E4A41;
+    --bs-btn-border-color: #5E4A41;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #5E4A41;
+    --bs-btn-hover-border-color: #5E4A41;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #5E4A41;
+    --bs-btn-active-border-color: #5E4A41;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #5E4A41;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #5E4A41;
+    --bs-gradient: none;
+}
+
+.buscador {
+    padding: 2px;
+    margin: 10px;
+    display: inline-block;
+
+    input {
+        padding: 8px;
+        border-radius: 1px solid #5E4A41;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+
+    button {
+        background-color: #5E4A41;
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+        border-radius: 5px;
+    }
+}
+
+.iconos {
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: #5E4A41;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+
+    i {
+        color: #fff;
+        padding: 3px;
+    }
+}

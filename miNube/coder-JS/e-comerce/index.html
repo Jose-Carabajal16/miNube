@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOKO</title>
+    <!--JS-->
+    <!--ICONOS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--conteiner-->
+        <aside>
+            <header>
+                <h1 class="logo">KokoShop</h1>
+            </header>
+            <nav>
+                <ul class="menu"
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-fill"></i>Todos los
+                            productos</button>
+                    </li>
+                    <li>
+                        <button id="conjuntosLargos" class="boton-menu boton-categoria"><i class="bi bi-hand-index"></i>Conjuntos Largos</button>
+                    </li>
+                    <li>
+                        <button id="conjuntosCortos" class="boton-menu boton-categoria"><i class="bi bi-hand-index"></i>Conjuntos Cortos</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i>Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© Koko Coder</p>
+
+            </footer>
+
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!--Esto se va a llenar con JS-->
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

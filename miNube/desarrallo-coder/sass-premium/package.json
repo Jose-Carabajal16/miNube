@@ -1,0 +1,22 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "browserlist": "defaults",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.3",
+    "parcel": "^2.10.3"
+  },
+  "dependencies": {
+    "sanitize.css": "^13.0.0"
+  },
+  "description": "no vamos a instalar sass como tal si no parcel que sera nuestro buildingdo que se va a encarar de compilar y procesar todos los archivos que necesitemos",
+  "main": "index.js"
+}

@@ -1,0 +1,50 @@
+/*footer-boostrp*/
+
+#footer {
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    background-color: #D1C7BD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgLogo {
+    width: 193px;
+    height: 83px;
+}
+
+.redes {
+    padding: 10px;
+
+    i {
+        font-size: 25px;
+        color: #5E4A41;
+    }
+
+    a {
+        margin: 20px;
+    }
+}
+
+.links {
+    text-align: center;
+    justify-content: center;
+
+    ul {
+        display: flex;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    li {
+        margin-right: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+        font-size: 20px;
+    }
+}

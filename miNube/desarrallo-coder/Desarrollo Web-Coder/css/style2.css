@@ -1,0 +1,503 @@
+/*Reset css: estilos reseteados para trabajar desde 0 partimos del llamado "*" = a todo el documuento html*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    background-color: #D1C7BD;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.nav-sup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imgLogo{
+    width: 193px;
+    height: 83px;
+
+}
+.buscador-icons{
+align-items: center;
+}
+.buscador {
+    background-color: white;
+    border: 1px solid #000;
+    outline: none;
+    width: 200px;
+    height: 30px;
+    color: #666;
+    margin: 10px;
+    padding: 2px;
+    display: inline-block;
+}
+
+.iconos {
+    margin: 10px;
+    width: 35px;
+    height: 35px;
+    background-color: #5E4A41;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+.iconos i{
+    color: #fff;
+    padding: 3px;
+
+}
+.carrito{
+    text-decoration: none;
+}
+
+    
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* .nav-option{
+    display: inline-block;
+} */
+.lista{
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.lista a{
+	display:block;
+	color:#333;
+	text-decoration:none;
+	font-size:18px;
+	line-height:32px;
+	padding:0 15px;
+}
+
+
+.lista li{
+	position: relative;
+	float:  left;
+	margin: 0;
+	padding: 0;
+}
+
+.lista li:hover{
+	background-color: gray;
+}
+
+.lista ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #fff;
+	padding: 0;
+	list-style: none;
+}
+
+.lista ul li{
+	float: none;
+	width: 200px;
+}
+
+.lista ul a{
+	line-height: 120%;
+	padding: 10px 15px;
+}
+
+.lista ul ul{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	background-color: #fff;
+}
+
+.lista li:hover > ul{
+	display: block;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+.carrusel img{
+    width: 100%;
+}
+#mainInicio{
+    background-color: #ebebeb;
+    min-height: 100vh;
+    
+}
+    
+
+.productos{
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    display: flex; /*display se le agrega al padre es decir que todos los objetos
+    que tenga a adentro se los acomodara en una sola linea*/
+    justify-content: center;
+    gap: 50px; /*lo que hace es decirle a las cajas que tengan una distancia de 50px y no rompe a la propiedad de flex-box*/
+    flex-wrap: wrap;
+
+} 
+
+.tituloProductos {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.tituloProductos h3{
+    font-size: 25px;
+}
+
+
+.contenedor{
+    /* margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px; */
+    background-color: #fff;
+    display: inline-block; 
+    align-items: center;
+    width: 25%;
+    height: auto;
+    
+    
+    
+}
+.contenedor img{
+    width: 100%;
+}
+.contenedor div{
+    padding: 15px;
+    text-align: center;
+}
+.contenedor a{
+    color: #000;
+}
+.infoAdicionalBox {
+    background-color: #5E4A41;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 80px);
+    gap: 10px; 
+    align-items: center; 
+    justify-content: space-around;
+    margin-top: auto;
+
+
+}
+.infoAdicionalBox i{
+    color: #fff;
+    
+}
+
+.masInfo p{
+    color: aliceblue;
+}
+.masInfo h5{
+    color: aliceblue;
+}
+
+#mainDetail{
+    min-height: 100vh;
+    background-color: #ebebeb;
+}
+.carruselDetail{
+    text-align: center;
+    background-color: #5E4A41;
+    padding: 20px;
+}
+
+.carruselDetail p{
+    color:aliceblue
+}
+.carruselDetail p i{
+    margin-right: 20px;
+}
+.detalle{
+    margin: 10px;
+}
+.images{
+    display: inline;
+}
+.images img {
+    margin-right: 10px;
+}
+
+.detail{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#mainLogin{
+    
+    background-color: #fff;
+    min-height: 100vh;
+    
+    
+}
+.contenedorLogin{
+    background-color:#D1C7BD;
+    text-align: center;
+    margin: 20px;
+    width: 50%;
+    border-radius: 20px;
+}
+.contenedorLogin h1{
+    color: #5E4A41;
+    padding: 10px;
+}
+
+.formulario ul li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+button{
+    width: 100px;
+    background-color: #5E4A41;
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #fff;
+    
+}
+    
+button a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+#mainQuienesomos{
+    min-height: 100vh;
+    background-color: #fff;
+}
+.quienesomos{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.quienesomos img{
+    width: 415px;
+    height: 355px;
+}
+.quienesomos h1{
+    font-family: 'Italianno', cursive;
+    font-size: 50px;
+    color: #5E4A41;
+    margin: 10px;
+    display: inline-block;
+    position: absolute;
+
+}
+.quienesomos p{
+    margin: 10px;
+    padding-top: 60px;
+    display: inline-block;
+    position: absolute;
+
+}
+#mainCarrito{
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+.carritoCon {
+    display: flex;
+    margin: 30px;
+    padding: 10px;
+    align-items: center;
+    border-bottom: #000 1px solid;
+}
+
+.carritoCon img {
+    width: 100px; 
+    height: 150px;
+}
+
+.deteil {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; 
+}
+
+/* Agregamos un poco de estilo para los botones de suma y resta */
+.titulo a{
+    color: #000;
+    text-decoration: none;
+}
+.cantidad {
+    display: flex;
+    align-items: center;
+}
+
+.suma, .resta {
+    color: white;
+    
+    background-color: #5E4A41;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none; /* Elimina el borde de los botones */
+    border-radius: 4px; /* Agrega bordes redondeados */
+}
+
+
+
+.price{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.totales{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right:30px ;
+}
+
+    
+
+.totales p{
+    display: inline-block;
+}
+.desc{
+    border-bottom:#5E4A41 1px solid;
+}
+button{
+    margin-top: 10px;
+}
+#footer{
+    background-color: #D1C7BD;
+    display: flex; /*va a convertir a sus elementos en linea*/
+    justify-content: space-around;
+    align-items: center;
+    /* position: relative; */
+}
+.redes {
+    padding: 10px;
+
+}
+
+.redes i{
+    font-size: 25px;
+    color: #5E4A41
+}
+.redes a{
+    margin: 20px;
+}
+
+
+
+.links {
+    text-align: center;
+}
+
+
+.links ul {
+    display: flex; /* Para que las listas estén en línea */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    list-style-type: none;
+}
+
+.links li {
+    margin-right: 20px; /* Espacio entre elementos de la lista */
+}
+
+.links a {
+
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+
+/*BOX PRUEBA */
+/*moredado de caja*/
+.boxPadre{
+    width: 100%; /*100% del ancho de pantalla*/
+    height: 100 vh; /*ocupe en relacion al alto disponible de pantalla*/
+    background-color: aquamarine;
+    padding-top: 200px;
+    
+}
+.boxHijo{
+    width: 250px;
+    height: 250PX;
+    background-color: #5E4A41;
+    margin: 30px /*Arriba y abajo no se mueve*/ auto /*en los costados lo acomoda en forma automatica*/;
+    overflow: auto; /*propiedad que ajusta el contenido respetando el tamaño de la caja */
+    /*PADING ES EL ESPACIO DE RELLENO Y AGARRA DEL BORDE DE LA CAJA HACIA ADENTRO*/
+    padding: 20px;
+    border: 5px solid orange;
+    
+}
+
+/*tanto pading, border y margin aplica a lo siguiente
+1 solo valor = aplica a los 4 lados
+2 valores aplica primero al top/bottom y despues al left/right
+3 valores aplica primero  al top, luego al left y right y por ultimo al bottom
+4 valores aplica por separado a cada lado
+*/
+
+/*Vamos a darle al padre el sistema de grid*/
+#pruebasGrid{
+    display: grid;
+    /*dentro de nuestro sitio no puede superarse las 12 columnas*/
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 20px; /*da un espacio de forma global a todas las columnas y a todas las filas  */
+    /*grid-template-areas:  ;*/ /*cuando nosotros delimitamos la cantidad de columnas y de filas que queremos que ocupe a traves del area vamos a indicar que area va a ocupor cada elemento*/
+}
+
+.boxGrid img{
+    width: 100%; /*dales el 100% de ancho para que ocupen lo que tenga disponible en la columna*/
+    height: 100%;
+}
+
+#pruebasGrid2{
+    margin-top: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 20px; 
+    grid-template-areas: 
+    /*columna 1           columna 2      columna 3      columna 4*/
+    "hijoGridPrueba1 hijoGridPrueba1 hijoGridPrueba2 hijoGridPrueba2" /*FILA 1*/
+    "hijoGridPrueba1 hijoGridPrueba1 hijoGridPrueba2 hijoGridPrueba2"/*FILA 2*/
+   ;
+}
+.boxGrid img{
+    width: 100%; /*dales el 100% de ancho para que ocupen lo que tenga disponible en la columna*/
+    height: 100%;
+}
+
+.hijoGridPrueba1{
+    grid-area: hijoGridPrueba1;
+}
+.hijoGridPrueba2{
+    grid-area: hijoGridPrueba2;
+}
+
+/*MEDIAQUERIES*/
+@media (max-width: 600px){/*a partir de 600px o menos va a pasar algo*/
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <p class="p">Hola mundo</p>
+    <p>como estas</p>
+    <p>nos vemos hoy</p>
+    <p class="seleccionado">o mañana</p>
+    <p>adios</p>
+
+    <script>
+        //document.querySelector();//accede a un elemento el primero que encuentra
+        //document.querySelectorAll(); // accede a una coleccion de elementos
+
+        // En los paramentros va una consulta
+
+        /**
+         * ID
+         * CLASS
+         * Etiqueta
+         * Atributo
+         * combinacion de css
+        */
+       //etiqueta
+       let parrafo = document.querySelector('p');
+       console.log(parrafo);
+       let parrafos = document.querySelectorAll('p');
+       console.log(parrafos);
+       //clase
+       let clase = document.querySelector('.seleccionado');
+       console.log(clase);
+    </script>
+
+</body>
+</html>

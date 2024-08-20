@@ -1,0 +1,10 @@
+1- lo primero que hay que hacer al ejecutar un proyecto nuevo es npm init -y
+2- extrictamente crear el gitignore con node_modules
+3- instalar la dependencia npm i express
+4-const express = require('express');
+
+const PORT = 8081
+const app = express()
+
+app.listen(PORT, ()=> console.log(`Servidor corriendo en puerto: ${PORT}`));
+5- ir al packjson y en la parte de scripts "start" "node ./src/app.js" lo replicamos "dev" "nodemon ./src/app.js"

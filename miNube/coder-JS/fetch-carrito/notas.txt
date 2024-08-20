@@ -1,0 +1,79 @@
+<div class="card">
+                    <img src="/images/mesadetrabajo2.jpg" alt="">
+                    <div class="detalle">
+                        <h3 class="titulo-card">Aros Colgantes Rufina</h3>
+                        <p class="descripcion">Aros de oro alargados envuelto en perlas. Elegancia real para resaltar tu
+                            belleza.</p>
+                        <p class="precio">$3000</p>
+                        <button class="agregar" data-id="1">Agregar a Carrito</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/mesadetrabajo3.jpg" alt="">
+                    <div class="detalle">
+                        <h3 class="titulo-card">Argollas Kika</h3>
+                        <p class="descripcion">Argollas simples, elegantes, de plata fina. Un toque de distinción para tu
+                            estilo diario.</p>
+                        <p class="precio">$3000</p>
+                        <button class="agregar" data-id="2">Agregar a Carrito</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/mesadetrabajo4.jpg" alt="">
+                    <div class="detalle">
+                        <h3 class="titulo-card">Aros Colgantes Luna</h3>
+                        <p class="descripcion">Oro brillante abraza perlas grandes. Aros que deslumbran con encanto atemporal</p>
+                        <p class="precio">$3000</p>
+                        <button class="agregar" data-id="3">Agregar a Carrito</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/mesadetrabajo5.jpg" alt="">
+                    <div class="detalle">
+                        <h3 class="titulo-card">Pulceras Isabella</h3>
+                        <p class="descripcion">Dos pulseras, infinitas posibilidades. Dijes delicados en oro para un toque de
+                            armonía.</p>
+                        <p class="precio">$3000</p>
+                        <button class="agregar" data-id="4">Agregar a Carrito</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/mesadetrabajo6.jpg" alt="">
+                    <div class="detalle">
+                        <h3 class="titulo-card">Collar con dije Marte</h3>
+                        <p class="descripcion">Collar único de oro con perlas grandes. Glamour y sofisticación que roban
+                            miradas</p>
+                        <p class="precio">$3000</p>
+                        <button class="agregar" data-id="5">Agregar a Carrito</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/mesadetrabajo7.jpg" alt="">
+                    <div class="detalle">
+                        <h3 class="titulo-card">Pack de anillos Afrodita</h3>
+                        <p class="descripcion">Elegancia en cada dedo con este pack de 5 anillos de oro. Estilo versátil y
+                            radiante.</p>
+                        <p class="precio">$3000</p>
+                        <button class="agregar" data-id="6">Agregar a Carrito</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/produ@3x-8.png" alt="">
+                    <div class="detalle">
+                        <h3 class="titulo-card">Aros Colgantes Paris</h3>
+                        <p class="descripcion">Aros de oro radiante con perlas grandes. Sofisticación y estilo en
+                            cada detalle.</p>
+                        <p class="precio">$3000</p>
+                        <button class="agregar" data-id="7">Agregar a Carrito</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/produc@3x-8.png" alt="">
+                    <div class="detalle">
+                        <h3 class="titulo-card">Pulceras Roma</h3>
+                        <p class="descripcion">Pulsera refinada con dije de oro, fusionando elegancia y estilo. Tu historia,
+                            tu joya.</p>
+                        <p class="precio">$3000</p>
+                        <button class="agregar" data-id="8">Agregar a Carrito</button>
+                    </div>
+                </div>

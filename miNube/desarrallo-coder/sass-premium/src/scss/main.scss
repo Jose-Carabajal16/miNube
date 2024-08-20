@@ -1,0 +1,23 @@
+//VARIABLES → Es importante que esten al principio
+@import 'variables';
+//MIXINS
+@import 'mixins';
+// ESTILOS BASE
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utils';
+//COMPONENT
+@import 'components/acordions';
+@import 'components/buttons';
+@import'components/cards';
+@import'components/inputs';
+@import 'components/links';
+@import 'components/navbar';
+@import 'components/select';
+
+//LAYOUT
+@import 'layouts/base-layout';
+
+// ESTILOS VENDORS
+@import 'vendors';
+

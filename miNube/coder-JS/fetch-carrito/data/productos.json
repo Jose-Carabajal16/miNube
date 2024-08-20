@@ -1,0 +1,67 @@
+[
+    {
+        "img":"mesadetrabajo2.jpg",
+        "titulo": "Aros Colgantes Rufina",
+        "descripcion":"Aros de oro alargados envuelto en perlas.     Elegancia real para resaltar tu belleza.",
+        "precio":3000,
+        "cantidad": 1,
+        "id": 1 
+    },
+    {
+        "img":"mesadetrabajo3.jpg",
+        "titulo": "Argollas Kika",
+        "descripcion":"Argollas simples, elegantes, de plata fina. Un toque de distinción para tu estilo diario.",
+        "precio":3000,
+        "cantidad": 1,
+        "id": 2 
+    },
+    {
+        "img":"mesadetrabajo4.jpg",
+        "titulo": "Aros Colgantes Luna",
+        "descripcion":"Oro brillante abraza perlas grandes. Aros que deslumbran con encanto atemporal",
+        "precio":3000,
+        "cantidad": 1,
+        "id": 3 
+    },
+    {
+        "img":"mesadetrabajo5.jpg",
+        "titulo": "Pulceras Isabella",
+        "descripcion":"Dos pulseras, infinitas posibilidades. Dijes delicados en oro para un toque de armonía.",
+        "precio":3000,
+        "cantidad": 1,
+        "id": 4 
+    },
+    {
+        "img":"mesadetrabajo6.jpg",
+        "titulo": "Collar con dije Marte",
+        "descripcion":"Collar único de oro con perlas grandes. Glamour y sofisticación que roban miradas",
+        "precio":3000,
+        "cantidad": 1,
+        "id": 5 
+    },
+    {
+        "img":"mesadetrabajo7.jpg",
+        "titulo": "Pack de anillos Afrodita",
+        "descripcion":"Elegancia en cada dedo con este pack de 5 anillos de oro. Estilo versátil y radiante",
+        "precio":3000,
+        "cantidad": 1,
+        "id": 6 
+    },
+    {
+        "img":"produ@3x-8.png",
+        "titulo": "Aros Colgantes Paris",
+        "descripcion":"Aros de oro radiante con perlas grandes. Sofisticación y estilo en cada detalle",
+        "precio":3000,
+        "cantidad": 1,
+        "id": 7 
+    },
+    {
+        "img":"produc@3x-8.png",
+        "titulo": "Pulceras Roma",
+        "descripcion":"Pulsera refinada con dije de oro, fusionando elegancia y estilo. Tu historia, tu joya",
+        "precio":3000,
+        "cantidad": 1,
+        "id": 8 
+    }
+
+]

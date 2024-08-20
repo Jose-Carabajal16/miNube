@@ -1,0 +1,64 @@
+Por supuesto, te explicaré cada línea del código y la función del `this` en el contexto de la clase `Persona`.
+
+### Código explicado
+
+```javascript
+class Persona {
+    nombre=""
+    email=""
+```
+
+- **`class Persona {`**: Define una clase llamada `Persona`. Una clase es una plantilla para crear objetos con propiedades y métodos.
+- **`nombre=""` y `email=""`**: Estas son propiedades de la clase `Persona`. Inicialmente se establecen como cadenas vacías.
+
+```javascript
+    constructor(nombre, email){//en general se usa para asignarle valores a las propiedades
+        this.nombre = nombre
+        this.email = email
+
+    }
+```
+
+- **`constructor(nombre, email) {`**: Define el constructor de la clase. El constructor es un método especial que se ejecuta cuando se crea una nueva instancia de la clase.
+- **`this.nombre = nombre`**: Asigna el valor del parámetro `nombre` a la propiedad `nombre` del objeto que se está creando. `this` se refiere al objeto actual que está siendo creado.
+- **`this.email = email`**: Asigna el valor del parámetro `email` a la propiedad `email` del objeto que se está creando.
+
+```javascript
+    saludar(){
+        console.log(`Hola soy ${this.nombre}`)
+    }
+```
+
+- **`saludar() {`**: Define un método llamado `saludar` en la clase `Persona`.
+- **`console.log(`Hola soy ${this.nombre}`)`**: Imprime en la consola un saludo que incluye el valor de la propiedad `nombre` del objeto actual. `this.nombre` se refiere a la propiedad `nombre` del objeto que está llamando al método `saludar`.
+
+```javascript
+    getemail(){
+        return this.email
+    }
+}
+```
+
+- **`getemail() {`**: Define un método llamado `getemail` en la clase `Persona`.
+- **`return this.email`**: Devuelve el valor de la propiedad `email` del objeto actual. `this.email` se refiere a la propiedad `email` del objeto que está llamando al método `getemail`.
+
+### Función de `this`
+
+El `this` es una referencia al objeto actual, es decir, al objeto que se está creando o al objeto que está llamando a un método. En el contexto de una clase:
+
+- **En el constructor**: `this` se refiere al nuevo objeto que se está creando. Permite asignar valores a las propiedades del objeto.
+- **En los métodos**: `this` se refiere al objeto que está llamando al método. Permite acceder y manipular las propiedades del objeto.
+
+### Ejemplo de uso
+
+```javascript
+const persona1 = new Persona('Juan', 'juan@example.com');
+persona1.saludar(); // Imprime "Hola soy Juan"
+console.log(persona1.getemail()); // Imprime "juan@example.com"
+```
+
+- **`new Persona('Juan', 'juan@example.com')`**: Crea una nueva instancia de la clase `Persona` con el nombre 'Juan' y el email 'juan@example.com'.
+- **`persona1.saludar()`**: Llama al método `saludar` del objeto `persona1`. `this.nombre` dentro de `saludar` se refiere a 'Juan'.
+- **`persona1.getemail()`**: Llama al método `getemail` del objeto `persona1`. `this.email` dentro de `getemail` se refiere a 'juan@example.com'.
+
+En resumen, `this` se utiliza para referirse al objeto actual, lo que permite acceder y manipular las propiedades y métodos del objeto desde dentro de la clase.

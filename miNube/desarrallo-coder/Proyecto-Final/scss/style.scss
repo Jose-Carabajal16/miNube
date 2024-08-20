@@ -1,0 +1,12 @@
+@import 'reset';
+@import 'header';
+@import 'footer';
+/*componentes*/
+@import 'components/cards';
+@import 'components/info';
+/*Import pages*/
+@import 'quienesomos/quienesomos';
+@import 'detalle-producto/detail';
+@import 'carrito/carrito';
+@import 'carrito/card-carrito';
+@import 'login/login';

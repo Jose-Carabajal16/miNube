@@ -1,0 +1,37 @@
+/*MAIN-BOOSTRAP*/
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+        margin: 30px;
+        overflow: hidden;
+        background-color: #fff;
+        transition: all .6s ease;
+        box-shadow: rgba(100, 100, 111, 0.2) 0 7px 25px;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+
+        .btn-primary {
+            background-color: #5E4A41 !important;
+            border-color: #5E4A41 !important;
+        }
+    }
+}
+
+
+.detalle {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        font-size: 25px;
+        color: #5E4A41;
+        padding: 10px 0;
+    }
+}
